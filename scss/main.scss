@@ -1,0 +1,17 @@
+@import 'variables', 'reset', 'mixin', 'home', 'media';
+
+body {
+  font-family: $font-family-primary;
+  color: $color-primary-600;
+  background-color: $color-primary-100;
+  -webkit-font-smoothing: antialiased;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    margin: 0 1rem;
+}

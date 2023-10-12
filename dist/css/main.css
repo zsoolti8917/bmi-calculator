@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+/* 0.875rem */
+/* 1rem */
+/* 1.25rem */
+/* 1.5rem */
+/* 3rem */
+/* 4rem */
+/* || RESET || */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+S p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.header__container {
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__header-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.main__header-container-left-title {
+  font-size: 48px;
+  color: #253347;
+  font-weight: 600;
+  line-height: 110%;
+}
+.main__header-container-left-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+.main__header-container-right .bmi__calculator-container {
+  padding: 1rem 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__header-container-right .bmi__calculator-container h2 {
+  color: #253347;
+}
+.main__header-container-right .bmi__calculator-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  font-weight: 600;
+  border: 1px solid #D8E2E7;
+  border-radius: 0.5rem;
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment input[type=radio] {
+  display: none;
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment input[type=radio] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #333;
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment input[type=radio] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #dcdcdc;
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment input[type=radio]:checked + label:before {
+  background: #c7d2fc;
+  /* Adjust to your desired background color */
+  border: 2px solid #c7d2fc;
+  /* Make the border the same color as the inner circle for consistency */
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment input[type=radio]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3366ff;
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment .metric__container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.main__header-container-right .bmi__calculator-container form .form__meassurment .imperial__container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.main__header-container-right .bmi__calculator-container form .form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: none;
+  padding: 0;
+}
+.main__header-container-right .bmi__calculator-container form .form__inputs label {
+  font-size: 14px;
+}
+.main__header-container-right .bmi__calculator-container form .form__inputs input {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 24px;
+  color: #253347;
+  font-weight: 600;
+  width: calc(100% - 1rem);
+}
+.main__header-container-right .bmi__calculator-container form .form__inputs fieldset {
+  border: none;
+  padding: 0;
+  font-size: 14px;
+}
+.main__header-container-right .bmi__calculator-container form .form__inputs fieldset legend {
+  margin-bottom: 0.2rem;
+}
+.main__header-container-right .bmi__calculator-container form .form__inputs fieldset .border {
+  border: 1px solid #D8E2E7;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.main__header-container-right .bmi__calculator-container form .form__inputs fieldset .border label {
+  font-size: 24px;
+  color: #345FF6;
+  font-weight: 600;
+}
+.main__header-container-right .bmi__calculator-container .bmi__calculator-result-container {
+  background-color: #345FF6;
+  color: #FFFFFF;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 2rem 2rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #5E6E85;
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 1rem;
+}/*# sourceMappingURL=main.css.map */
