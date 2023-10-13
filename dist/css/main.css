@@ -229,6 +229,84 @@ h6 {
   padding: 2rem 2rem;
 }
 
+.main__info {
+  margin-top: 5rem;
+}
+.main__info .info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main__info .info__container-right {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__info .info__container-right-title {
+  font-size: 2rem;
+  color: #253347;
+  line-height: 110%;
+}
+
+.main__cards {
+  margin-top: 5rem;
+}
+.main__cards .cards__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__cards .cards__container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__cards .cards__container .card-logo {
+  width: 4rem;
+}
+.main__cards .cards__container .card-title {
+  font-size: 24px;
+  color: #253347;
+}
+.main__cards .cards__container .card-text {
+  line-height: 150%;
+}
+
+.main__footer {
+  margin-top: 5rem 0 3rem 0;
+}
+.main__footer .footer__container {
+  display: grid;
+  gap: 2rem;
+}
+.main__footer .footer__container .footer__title-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__footer .footer__container .footer__title-card .footer__title-title {
+  font-size: 2rem;
+  color: #253347;
+}
+.main__footer .footer__container .footer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 2rem;
+}
+.main__footer .footer__container .footer-card-header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.main__footer .footer__container .footer-card-title {
+  font-size: 20px;
+  color: #253347;
+}
 body {
   font-family: "Inter", sans-serif;
   color: #5E6E85;
@@ -242,5 +320,5 @@ main {
 }
 
 .wrapper {
-  margin: 0 1rem;
+  padding: 2rem 1rem;
 }/*# sourceMappingURL=main.css.map */
